@@ -49,7 +49,7 @@
 #endif
 
 #ifndef BOARD_NAME
-  #define BOARD_NAME "RAMPS 1.4"
+  #define BOARD_NAME "RAMPS 1.4 Modified"
 #endif
 
 #define LARGE_FLASH true
@@ -78,7 +78,7 @@
 #define Y_MIN_PIN          14
 #define Y_MAX_PIN          15
 #define Z_MIN_PIN          18
-#define Z_MAX_PIN          19
+//#define Z_MAX_PIN          19 // Z_MAX is used for the filament sensor
 
 //
 // Z Probe (when not Z_MIN_PIN)
@@ -203,7 +203,7 @@
 #endif
 
 // define digital pin 4 for the filament runout sensor. Use the RAMPS 1.4 digital input 4 on the servos connector
-#define FIL_RUNOUT_PIN      4
+#define FIL_RUNOUT_PIN      19 //Using Z_MAX pin in my configuration
 
 #ifndef PS_ON_PIN
   #define PS_ON_PIN        12
