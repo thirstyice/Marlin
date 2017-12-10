@@ -64,9 +64,9 @@
 #endif
 #define SERVO1_PIN          6
 #define SERVO2_PIN          5
-#ifndef SERVO3_PIN
-  #define SERVO3_PIN        4
-#endif
+//#ifndef SERVO3_PIN
+  //#define SERVO3_PIN        4 This used for ps-on instead
+//#endif
 
 //
 // Limit Switches
@@ -206,7 +206,7 @@
 #define FIL_RUNOUT_PIN      19 //Using Z_MAX pin in my configuration
 
 #ifndef PS_ON_PIN
-  #define PS_ON_PIN        12
+  #define PS_ON_PIN        4 // 12 Using pin 4 in my configuration
 #endif
 
 #if ENABLED(CASE_LIGHT_ENABLE) && !PIN_EXISTS(CASE_LIGHT) && !defined(SPINDLE_LASER_ENABLE_PIN)
